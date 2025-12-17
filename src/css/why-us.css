@@ -1,0 +1,52 @@
+.why-us-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: var(--typography-wight);
+}
+
+
+.why-us-title {
+font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 32px;
+
+    line-height: 1.2;
+    color: var(--typography-black);
+    padding-bottom: 32px;
+}
+
+.why-us-text {
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--typography-black);
+        padding-bottom: 40px;
+}
+
+    @media screen  and (min-width: 1200px) {
+        .why-us-container {
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
+
+            .why-us-container {
+                display: flex;
+            }
+
+            .why-us-content {
+                width: 508px;
+                display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+            }
+        
+            .why-us-title {
+                font-size: 52px;
+                padding-bottom: 40px;
+            }
+        
+            .why-us-text {
+                font-size: 18px;
+            }
+    }

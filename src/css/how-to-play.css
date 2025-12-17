@@ -1,0 +1,110 @@
+.how-to-play-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: var(--typography-wight);
+}
+
+.how-to-play-title {
+    padding-bottom: 32px;
+   font-family: var(--third-family);
+font-weight: 700;
+font-size: 32px;
+
+line-height: 1.2;
+color: var(--typography-black);
+}
+
+.how-to-play-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+}
+
+.how-to-play-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.step-description {
+   font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+
+line-height: 1.5;
+color: var(--typography-red);
+
+border: 1px solid var(--typography-red);
+border-radius: 50px;
+padding: 10px;
+width: 46px;
+height: 46px;
+}
+
+
+.step-title {
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+
+line-height: 1.5;
+text-align: center;
+color: var(--typography-black);
+}
+
+.how-to-play-img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.arrow--desktop {
+  display: none;
+}
+
+.arrow--mobile {
+  display: block;
+}
+
+/* desktop */
+
+
+@media (min-width: 1200px) {
+.how-to-play-section {
+    padding-top: 80px;  
+    padding-bottom: 80px;
+}
+
+.how-to-play-title {
+    padding-bottom: 48px;
+    font-size: 52px;
+}
+
+    .how-to-play-content {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .how-to-play-img img {
+    max-width: 72px;
+    height: auto;
+}
+    .how-to-play-step {
+        gap: 12px;
+    }
+
+    .arrow--mobile {
+    display: none;
+  }
+
+  .arrow--desktop {
+    display: block;
+  }
+}
