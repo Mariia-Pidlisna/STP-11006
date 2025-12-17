@@ -1,128 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/STP-11006/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/STP-11006/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-11006/assets/styles-DvPDDfy5.css">
-  </head>
-  <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/STP-11006/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+<head>
+<!-- Primary --> 
+ <title>Jolly Match 3 – Sweet Match-3 Puzzle Game</title>
+<meta name="description"
+  content="Match, rebuild, and relax. Jolly Match 3 brings thousands of colorful levels, events, helpers, and pet rescues—ad-free and playable offline. Get it on Google Play.">
+
+<meta name="keywords"
+  content="Jolly Match 3, match 3 puzzle, mobile puzzle game, boosters, offline game, pet rescue event, candy game">
+<link rel="canonical" href="https://netdashvia.site/">
+<meta name="robots" content="index, follow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script type="module" crossorigin src="/STP-11006/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/STP-11006/assets/styles-5L2hpvpj.css">
+</head>
+<body>
+  <header class="header">
+  <div class="container header-container">
+    <div class="logo"><a href="/index.html"><img src="../img/webp/Logo.webp" alt=""></a></div>
+        <!-- Кнопка відкриття -->
+
+    <button data-action="open" class="burger-open" type="button">
+      <svg width="30" height="20">
+        <use href="../img/icons.svg#Vector-burger"></use>
+      </svg>
+    </button>
+    <div data-visible="close" id="burger-menu" class="burger-menu">
+      <div class="burger-header">
+        <button data-action="close" class="burger-close" aria-label="Close menu" type="button">
+          <svg class="icon-close" width="24" height="24">
+            <use href="../img/icons.svg#Vector-close"></use>
+          </svg>
+        </button>
+      </div>
+
+    
+        <ul class="nav-list">
+          <li class="header-nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#gallery" class="nav-link">Gallery</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#howtoplay" class="nav-link">How to Play</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#benefits" class="nav-link">Benefits</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#whyus" class="nav-link">Why Us</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#reviews" class="nav-link">Reviews</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#updates" class="nav-link">Updates</a>
+          </li>
+        </ul>
   </div>
 </header>
 
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/STP-11006/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+  <main>
+    <section class="hero-section" id="home">
+    <div class="hero container">
+       <div class="hero-content">
+        <h1 class="hero-title">
+                <img src="../img/webp/Title.webp" alt="Jolly Match">
+        </h1>
+        
+        <p class="hero-description">
+            storm’s done. time to rebuild the fun.
+        </p>
+        
+        <a href="https://play.google.com/store/apps/details?id=com.jollyco.jollybattlematch3&hl=en&gl=us" class="store-button" aria-label="Get Jolly Match on Google Play">
+            <img src="../img/webp/Playstore.webp" alt="" class="store-button__icon" />
+        
+            <span class="store-button__text">
+                <span class="store-button__label">GET IT ON</span>
+                <span class="store-button__store">Google Play</span>
+            </span>
+        </a>
+       </div>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
 </section>
+    <section class="about-section" id="about">
+  <div class="about-container container">
+    <div class="about-content">
+      <h2 class="about-title title">About the Game</h2>
+      <p class="about-text">
+        One day, a wild tornado swept across the world of Jolly.<br>It tore off roofs, tangled the roads, and scattered everything
+        that was important to the inhabitants.<br>Now this world stands silent and a little lost — and it’s waiting just for you.
+      </p>
+      <p class="about-text">
+        Along the way, you’ll meet quirky helpers: a comedian who laughs at the wrong things; a trickster who helps by accident;
+        a loafer who does everything very slowly, but at just the right moment.<br>They’re imperfect, but truly yours
+    </div>
+    <div class="about-image-wrapper">
+      <img src="../img/webp/img_about.webp" alt="Jolly Match 3 Gameplay" class="about__image" />
+    </div>
+  </div>
+    
+</section>
+    <section class="gallery-section" id="gallery">
+  <div class="container gallery-container">
+  <h2 class="gallery-title">Game Gallery</h2>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+  <div class="gallery-track">
+    <ul class="gallery-list">
+      <li class="gallery-item">
+        <picture>
+          <source srcset="../img/webp/img.webp, ../img/webp/img-d.webp" />
+          <img src="../img/webp/img-d.webp" alt="Game One" loading="lazy" />
+        </picture>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+      <li class="gallery-item">
+        <picture>
+          <source srcset="../img/webp/img1.webp, ../img/webp/img1-d.webp" />
+          <img src="../img/webp/img1-d.webp" alt="Game Three" loading="lazy" />
+        </picture>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+      <li class="gallery-item">
+        <picture>
+          <source srcset="../img/webp/img2.webp, ../img/webp/img2-d.webp" />
+          <img src="../img/webp/img2-d.webp" alt="Game Two" loading="lazy" />
+        </picture>
       </li>
+      <li class="gallery-item">   
+        <picture>
+          <source srcset="../img/webp/img3.webp, ../img/webp/img3-d.webp" />
+          <img src="../img/webp/img3-d.webp" alt="Game Four" loading="lazy" />
+        </picture>
+      </li>
+      <li class="gallery-item">
+        <picture>
+          <source srcset="../img/webp/img4.webp, ../img/webp/img4-d.webp" />
+          <img src="../img/webp/img4-d.webp" alt="Game Five" loading="lazy" />
+        </picture>
+      </li>
+      <li class="gallery-item">
+        <picture>
+          <source srcset="../img/webp/img5.webp, ../img/webp/img5-d.webp" />
+          <img src="../img/webp/img5-d.webp" alt="Game Six" loading="lazy" />
+        </picture>
+      </li>
+      <li class="gallery-item">
+        <picture>
+          <source srcset="../img/webp/img6.webp, ../img/webp/img6-d.webp" />
+          <img src="../img/webp/img6-d.webp" alt="Game Seven" loading="lazy" />
+        </picture>
+      </li>
+     
     </ul>
   </div>
-</article>
 
-    </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  </div>
+</section>
+    <section class="how-to-play-section" id="howtoplay">
+    <div class="container how-to-play-container">
+        <h2 class="how-to-play-title">How to Play</h2>
+        <div class="how-to-play-content">
+        <div class="how-to-play-step">
+            <p class="step-description">1</p>
+            <h3 class="step-title">Swipe to move and set up your next Big Match</h3>
+            
+        </div>  
+        <div class="how-to-play-img"><img src="../img/webp/arrow.webp" alt="arrow"></div>
+        <div class="how-to-play-step">
+            <p class="step-description">2</p>
+            <h3 class="step-title">
+                Combine matching pieces to trigger powerful reactions
+            </h3>
+        </div>
+        
+        <div class="how-to-play-img">
+            <img src="../img/webp/arrow.webp" alt="arrow" class="arrow arrow--mobile" aria-hidden="true" />
+            <img src="../img/webp/arrow-up.webp" alt="arrow" class="arrow arrow--desktop" aria-hidden="true" />
+        </div>
+ <div class="how-to-play-step">
+            <p class="step-description">3</p>
+            <h3 class="step-title">Clear space on the board to stay in control of the game</h3>
+            
+        </div>
+        <div class="how-to-play-img"><img src="../img/webp/arrow.webp" alt="arrow"></div>
+        <div class="how-to-play-step">
+            <p class="step-description">4</p>
+            <h3 class="step-title">Build chain reactions to unlock bigger wins and progress</h3>
+        </div>
+        </div>
+    </div>
+</section>
+    <section class="benefits-section" id="benefits">
+  <div class="container benefits-container">
+    <h2 class="benefits-title">Benefits</h2>
+    <div class="benefits-grid">
+        <ul class="benefits-list">
+            <li class="benefit-item">
+                <svg class="benefit-icon" width="24" height="24">
+                    <use href="../img/icons.svg#Vector-2"></use>
+                </svg>
+                <h3 class="benefit-title">No ads, no extra noise.</h3>
+            </li>
+            <li class="benefit-item">
+                <svg class="benefit-icon" width="24" height="24">
+                    <use href="../img/icons.svg#Vector-2"></use>
+                </svg>
+                <h3 class="benefit-title">Works offline any time.</h3>
+            </li>
+            <li class="benefit-item">
+                <svg class="benefit-icon" width="24" height="24">
+                    <use href="../img/icons.svg#Vector-2"></use>
+                </svg>
+                <h3 class="benefit-title">Hundreds of levels — easy and tricky.</h3>
+            </li>
+            <li class="benefit-item">
+                <svg class="benefit-icon" width="24" height="24">
+                    <use href="../img/icons.svg#Vector-2"></use>
+                </svg>
+                <h3 class="benefit-title">Updated regularly and reliably.</h3>
+            </li>
+            <li class="benefit-item">
+                <svg class="benefit-icon" width="24" height="24">
+                    <use href="../img/icons.svg#Vector-2"></use>
+                </svg>
+                <h3 class="benefit-title">Team events or a comfortable solo mode.</h3>
+            </li>
+        </ul>
+       </div>
+       <div class="benefits-image-wrapper">
+        <img src="../img/webp/img_benefits.webp" alt="Benefits">
+       </div>
+    </div>
+  </div>
+</section>
+    <section class="why-us-section" id="whyus">
+    <div class="container why-us-container">
+       <div class="why-us-content">
+        <h2 class="why-us-title">Why Us</h2>
+        <p class="why-us-text">We’re just five people who wanted a match-3 game that doesn’t shout at you.We argue about cookie
+            colors way more than
+            reasonable adults should.<a href="#">Jolly Match</a> wasn’t part of some big plan — it just kept growing on its
+            own.That’s really it.
+            Nothing more.</p>
+         </div>
+        <div class="why-us-img">
+            <img src="../img/webp/img_why-us.webp" alt="Why Us Image">
+        
+        </div>
+    </div>
+</section>
+    <section class="reviews-section" id="reviews">
+    <div class="container reviews-container">
+        <h2 class="reviews-title">Reviews</h2>
+        <div class="reviews-list-wrapper">
+        <ul class="reviews-list">
+            <li class="review-item">
+                <p class="review-text">“Played it during commute, lost track of time.”</p>
+                <div class="review-author">
+                    <img src="../img/webp/Mia.webp" alt="Jane">
+                    <span class="author-name">Jane</span>
+                </div>
+            </li>
+            <li class="review-item">
+                <p class="review-text">“Too many cookies, still addictive.”</p>
+                <div class="review-author">
+                    <img src="../img/webp/man.webp" alt="Mike">
+                    <span class="author-name">David</span>
+                </div>
+            </li>
+            <li class="review-item">
+                <p class="review-text">“Finally a puzzle game that doesn’t shove ads.”</p>
+                <div class="review-author">
+                    <img src="../img/webp/wman.webp" alt="Sara">
+                    <span class="author-name">Mary</span>
+                </div>
+            </li>
+            
+        </ul>
+        </div>
+    </div>
+</section>
+    <section class="updates-section" id="updates">
+    <div class="container updates-container">
+        <div class="update-item">
+            <h2 class="updates-title">Updates</h2>
+            <p class="update-description">
+            <strong>oct 30.2025</strong> — rescue challenge save kittens, puppies, hamsters. collect paw tokens. <br>customize them. also <strong>50 new levels
+            (2101-2151)</strong>, new reward chest, smoother animation.
+            </p>
+        </div>
+       <div class="update-image"><img src="../img/webp/img_updates.webp" alt=""></div>
+        </div>
+    </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container footer-container">
+    <nav class="footer-nav">
+      <div class="footer-contact"><a href="mailto:team@netdashvia.site">team@netdashvia.site</a></div>
+      <div class="footer-separator"><ul class="footer-nav-list">
+        <li class="footer-separator-li"><a href="/privacy-policy.html">Privacy Policy</a></li>
+        <li class="footer-separator-li"><a href="/terms-and-conditions.html">Terms and conditions</a></li>
+        <li class="footer-separator-li"><a href="/cookies-policy.html">Cookies Policy</a></li>
+      </ul></div>
+     
+    </nav>
+    <div class="footer-copy">&copy; 2025 netdashvia.site – All rights reserved</div>
   </div>
 </footer>
 
 
-  </body>
+</body>
 </html>
