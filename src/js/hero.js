@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (localStorage.getItem("cookiesAccepted") === null) {
     policy.classList.remove("hidden");
-    document.body.classList.add("no-scroll");
+    // document.body.classList.add("no-scroll");
   }
 
   const handleChoice = (accepted) => {
     localStorage.setItem("cookiesAccepted", accepted ? "true" : "false");
     policy.classList.add("hidden");
-    document.body.classList.remove("no-scroll");
+    // document.body.classList.remove("no-scroll");
   };
 
   acceptBtn.addEventListener("click", () => handleChoice(true));
