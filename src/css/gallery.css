@@ -1,71 +1,66 @@
 .gallery-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .gallery-title {
-    padding-bottom: 32px;
-    font-family: var(--third-family);
-        font-weight: 700;
-        font-size: 32px;
-
-        line-height: 1.2;
-        color: var(--typography-black);
+  padding-bottom: 32px;
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--typography-black);
 }
 
-.gallery-list {
-    display: flex;
-    gap: 16px;
-    list-style: none;
-    scroll-snap-type: x mandatory;
+/* Контейнер для галереї */
+.gallery-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+}
+
+/* Ховаємо скролбар */
+.gallery-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Елементи галереї */
+.gallery-item {
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+  overflow: hidden;
 }
 
 .gallery-item img {
-    width: 100%;
-    display: flex;
-    border-radius: 8px;
+  width: 100%;
+  max-width: 296px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
 }
 
-.gallery-track {
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-
-.gallery-item {
-    flex: 0 0 80%;
-    scroll-snap-align: center; 
-}
-
-.gallery-track::-webkit-scrollbar {
-    display: none;
-}
-
-
+/* Адаптація для великих екранів */
 @media only screen and (min-width: 1200px) {
-    .gallery-container {
+  .gallery-container {
     padding-top: 80px;
     padding-bottom: 80px;
-    }
+  }
 
-    .gallery-title {
-        padding-bottom: 40px;
-        font-size: 52px;
-    }
-.gallery-list {
-    display: flex;
-    gap: 32px;
-    justify-content: space-around;
+  .gallery-title {
+    padding-bottom: 40px;
+    font-size: 52px;
+  }
 
-}
-        .gallery-item {
-            flex: 0 0 33%;
-            scroll-snap-align: center;
-        
-        }
+  .gallery-item {
+    flex: 0 0 33%;
+    scroll-snap-align: center;
+  }
 
-        .gallery-item img {
-        border-radius: 12px;
-            width: 400px;
-            height: 533px;
-        }
+  .gallery-item img {
+    max-width: 400px;
+    border-radius: 12px;
+  }
 }
