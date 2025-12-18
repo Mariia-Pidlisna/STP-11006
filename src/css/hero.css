@@ -4,13 +4,16 @@
 
 .hero {
     padding-top: 186px;
-    padding-bottom: 164px;
-height: 738px;
+
     background-image: url(../img/webp/hero_section.webp);
     background-size: cover;
-    background-position: top left;
+    background-position: top center;
     text-align: center;
     background-repeat: no-repeat;
+}
+
+.hero-content {
+      padding-bottom: 164px;
 }
 
 
@@ -89,6 +92,7 @@ color: var(--typography-wight);
     
 
     .hero-content {
+          padding-bottom: 84px;
         width: 485px;
         display: flex;
         flex-direction: column;
