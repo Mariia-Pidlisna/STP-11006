@@ -12,6 +12,7 @@
 
 /* Sections style */
 @import url('./header.css');
+
 @import url('./hero.css');
 @import url('./about.css');
 @import url('./gallery.css');
@@ -20,4 +21,6 @@
 @import url('./why-us.css');
 @import url('./reviews.css');
 @import url('./updates.css');
+@import url('./legal-pages.css');
+
 @import url('./footer.css');

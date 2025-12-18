@@ -1,0 +1,71 @@
+.legal {
+    padding-top: 0;
+}
+
+.legal-container {
+    padding-top: 120px;
+}
+
+.legal-container h1 {
+    padding-bottom: 40px;
+    font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.2;
+        text-align: center;
+        color: var(--typography-black);
+}
+.legal-container p {
+    padding-bottom: 16px;
+}
+
+.legal-container a {
+    color: var(--secondary-link);
+}
+
+.privacy-section p, ul,
+.legal-container p,
+.policy-info p {
+font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+
+    line-height: 1.5;
+    color: var(--typography-black);
+}
+
+.privacy-section h2, h3 {
+    font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 16px;
+
+        line-height: 1.5;
+        color: var(--typography-black);
+}
+
+.privacy-section h2 {
+padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.privacy-section h3 {
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+.style-disc {
+    list-style-type: disc;
+   margin-left: 24px;
+}
+
+
+@media (min-width: 1200px) {
+    .privacy-section h2,
+        h3,
+    .privacy-section p,
+        ul,
+        .legal-container p,
+        .policy-info p {
+            font-size: 18px;
+        }
+}
