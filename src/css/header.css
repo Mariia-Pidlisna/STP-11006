@@ -42,6 +42,10 @@
     z-index: 9999;
 }
 
+.burger-open:hover {
+  fill: #000;
+}
+
 .burger-menu {
   position: absolute;
   top: 52px;
@@ -139,6 +143,18 @@ width: 1480px;
 .header-nav-item a {
   padding-bottom: 0;
   padding-right: 32px;
+  font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+  
+    /* line-height: 24px; */
+    line-height: 1.5;
+    text-align: center;
+    color: var(--default-40);
+}
+
+.header-nav-item a:hover {
+  color: var(--typography-wight);
 }
 
 }
