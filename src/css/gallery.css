@@ -12,13 +12,21 @@
   color: var(--typography-black);
 }
 
-/* Контейнер для галереї */
 .gallery-track {
   display: flex;
+  gap: 16px;
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 
+  padding-inline: 16px;
+  /* 🔑 КЛЮЧОВЕ */
+  box-sizing: border-box;
 }
 
 /* Ховаємо скролбар */
@@ -30,14 +38,15 @@
 .gallery-item {
   flex: 0 0 80%;
   scroll-snap-align: center;
+  /* 🔑 КЛЮЧ */
+  border-radius: 8px;
   overflow: hidden;
+ height: 395px;
 }
 
 .gallery-item img {
   width: 100%;
-  max-width: 296px;
-  height: auto;
-  border-radius: 8px;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
@@ -54,13 +63,19 @@
     font-size: 52px;
   }
 
-  .gallery-item {
-    flex: 0 0 33%;
-    scroll-snap-align: center;
-  }
+      .gallery-item {
+        flex: 0 0 30%;
+        height: 533px;
+        border-radius: 12px;
+        margin-left: 32px;
+      }
+  
+      .gallery-track {
+        padding-inline: 0;
+      }
+  
 
   .gallery-item img {
-    max-width: 400px;
-    border-radius: 12px;
+    width: 400px;
   }
 }
